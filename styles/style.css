@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+/*font-family: 'Inter', sans-serif;
+Regular 400
+semibold 600
+*/
+
+:root{
+    --color-principal: #1F1D2C;
+    --color-fondo:#242635;
+    --color-titulo:#FFFFFF;
+    --color-parrafo:#E5E5E5;
+    --color-acento: #f1a600;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-principal);
+    font-family: 'Inter', sans-serif;
+    background-image: url(../Assets/Vectores/Rectangle\ 34.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+/*estilos nav*/
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.5rem 1.25rem;
+    background-color: transparent;
+}
+
+nav>div img{
+    width: 24px;
+}
+
+input#menu-hamburguesa{
+    visibility: hidden;
+}
+
+input#menu-hamburguesa~ul{
+    width: 40%;
+    background-color: var(--color-fondo);
+    color: var(--color-titulo);
+    font-size: 16px;
+    list-style: none;
+    position: absolute;
+    left: 100% ;
+    transition: all 300ms linear;
+    z-index: 100;
+}
+
+ul li{
+    padding: 0.25rem 0;
+}
+
+ul li:first-child{
+    color: var(--color-acento);
+}
+
+input#menu-hamburguesa:checked~ul{
+    left: 60%;
+}
+
+/*estilos section-presentacion*/
+
+#section-presentacion{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.25rem;
+    color: var(--color-titulo);
+}
+
+#section-presentacion>div{
+    position: absolute;
+    left: 0;
+    padding: 0 1.25rem;
+}
+
+#section-presentacion h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#section-presentacion h1+p{
+    font-size: 24px;
+    margin-bottom: 1rem;
+    margin-right: 5rem;
+}
+
+#section-presentacion p>span{
+    color: var(--color-acento);
+}
+
+#section-presentacion>img{
+    width: 200px;
+    
+}
+.social-icon-wrapper{
+    margin-top: 1rem;
+}
+
+.social-icon-wrapper>.icon{
+    margin-right: 1rem;
+}
+
+/*estilos section-info-estudios*/
+
+#section-info-estudios{
+    background-image: url(../Assets/Vectores/Rectangle\ 33.svg);
+    text-align: center;
+    padding: 1.5rem;
+}
+
+h2{
+    font-size:32px;
+    font-weight: 600;
+    color: var(--color-titulo);
+    padding-bottom: 1rem;
+}
+
+#section-info-estudios>p{
+    font-size: 18px;
+    color: var(--color-parrafo);
+    padding-bottom: 1rem;
+    line-height: 2rem;
+}
+
+.academic-wrapper{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0;
+} 
+
+.academic-card>img{
+    width: 100px;
+    height: 120px;
+}
+
+.academic-card img+p{
+    font-size: 18px;
+    color: var(--color-titulo);
+    padding-top: 0.25rem;
+    font-weight: 600;
+}
+
+.academic-card>p{
+    font-size: 16px;
+    color: var(--color-parrafo);
+}
+
+/*estilos section-experiencia*/
+
+h3{
+    font-size:32px;
+    font-weight: 600;
+    color: var(--color-titulo);
+    text-align: center;
+    padding-top: 1rem;
+}
+
+#section-experiencia{
+    text-align: center;
+    padding: 1.5rem;
+    padding-right: 5rem;
+}
+
+.experiencia-wrapper{
+    background-image: url(../assets/Vectores/Group\ 35.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+
+.experiencia-card{
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10%;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.experiencia-card>div+div{
+    padding-top: 0.25rem;
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.experiencia-card>div+div>p+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.experiencia-card>div+div+div{
+    padding-top: 1.25rem;
+}
+
+/*estilos section-habilidades*/
+
+h4{
+    font-size:32px;
+    font-weight: 600;
+    color: var(--color-titulo);   
+}
+
+#section-habilidades{
+    text-align: center;
+    padding: 1.5rem;
+    background-image: url(../assets/Vectores/Rectangle\ 34\ -\ 2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.habilidades-card{
+    display: flex;
+    margin-top: 1rem;
+}
+
+.habilidades-card>div{
+    color: var(--color-acento);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: 10%;
+}
+
+.habilidades-card>div+div{
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+    padding-top: .5rem;
+    margin-left: 10%;
+}
+
+/*estilos section-portafolio*/
+
+h5{
+    font-size:32px;
+    font-weight: 600;
+    color: var(--color-titulo);
+    padding:2rem 0;
+    text-align: center;
+}
+
+.portafolio-wrapper{
+    margin: 0 2rem;
+}
+
+.portafolio-trabajo{
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-acento);  
+}
+
+.portafolio-trabajo>div{
+    position: relative;
+    left: 5%;
+    top: 1rem;
+}
+
+.portafolio-trabajo>div>img{
+    width: 90%;           
+}
+
+.portafolio-trabajo+p{
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 1.5rem;
+}
+
+.portafolio-trabajo2{
+    width: 80%;
+    height: 80%;
+    background-color: var(--color-fondo);
+    position: relative;
+    left: 20%;  
+}
+
+.portafolio-trabajo2>div{
+    position: relative;
+    left: 5%;
+    top: 1rem;
+}
+
+.portafolio-trabajo2>div>img{
+    width: 90%;           
+}
+
+.portafolio-trabajo2+p{
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 1.5rem;
+    position: relative;
+    left: 20%; 
+}
+
+/*estilos section-contacto*/
+
+h6{
+    font-size:32px;
+    font-weight: 600;
+    color: var(--color-titulo);
+    margin-top: 5rem;
+    padding:2rem 0;
+    text-align: center;
+}
+
+#section-contacto{
+    background-color: var(--color-fondo);
+}
+
+#section-contacto>div{
+    margin: 0 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+
+#section-contacto img{
+    width: 80px;
+}
+
+.contacto-wrapper>div+div{
+    padding-top: 5rem;
+}
+
+.contacto-wrapper>div{
+    color: var(--color-titulo);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contacto-wrapper>div>p+p{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/*estilos footer*/
+
+footer{
+    height: 5rem;
+    text-align: center;
+    padding-top: 2rem;
+    color: var(--color-titulo);
+}
