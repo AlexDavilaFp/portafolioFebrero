@@ -97,6 +97,10 @@ input#menu-hamburguesa:checked~ul{
     margin-right: 5rem;
 }
 
+#section-presentacion p+p{
+    font-size: 18px;
+}
+
 #section-presentacion p>span{
     color: var(--color-acento);
 }
@@ -356,5 +360,138 @@ footer{
     text-align: center;
     padding-top: 2rem;
     color: var(--color-titulo);
+    font-size: 18px;
 }
 
+/*estilos desktop*/
+
+@media only screen and ( min-width:992px ){
+    
+    body{
+        background-image: url(../Assets/Vectores/Rectangle\ 34-1.svg);
+    }
+
+    /*estilos nav*/
+
+    label{
+        display: none;
+    }
+
+    input#menu-hamburguesa~ul{
+        position: static;
+        background-color: transparent;
+        display: flex;
+        font-size: 18px;
+        width: 100%; 
+    }
+
+    input#menu-hamburguesa~ul>li{
+        padding: 0 1rem;
+    }
+
+    /*estilos section-presentacion*/
+    
+    #section-presentacion>div{
+        padding: 0 5rem;
+    }
+
+    #section-presentacion h1{
+        font-size: 150px;
+    }
+
+    #section-presentacion h1+p{
+        font-size: 50px;
+    }
+
+    #section-presentacion>img{
+        width: 400px;
+        padding-right: 1rem;  
+    }
+
+    #section-presentacion p+p{
+        font-size: 45px;
+    }
+
+    .social-icon-wrapper>.icon{
+        width: 40px;
+        margin-bottom: 1rem;
+    }
+
+    /*estilos section-info-estudios*/
+
+    #section-info-estudios{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    h2{
+        font-size:45px;
+    }
+
+    #section-info-estudios>p{
+        font-size: 18px;
+    }
+
+    /*estilos section-experiencia*/
+
+    h3{
+        font-size:45px;
+    }
+
+    .experiencia-card{
+        padding: 0 10rem;
+    }
+
+    .experiencia-wrapper{
+        background-position: 80% top;
+    }
+
+    /*estilos section-habilidades*/
+
+    h4{
+        font-size:45px;
+    }
+
+    #section-habilidades{
+        background-image:url(../assets/Vectores/Rectangle\ 34\ -\ 3.svg);
+    }
+
+    .habilidades-card>div{
+        font-size: 45px;
+    }
+
+    .habilidades-card>div+div{
+        padding-top: 1rem;
+    }
+
+    /*estilos section-portafolio*/
+
+    h5{
+        font-size:45px;
+    }
+
+    .portafolio-wrapper{
+        margin: 0 5rem;
+    }
+
+    .portafolio-trabajo{
+        width: 50%;
+        height: 50%;      
+    }
+
+    .portafolio-trabajo2{
+        width: 50%;
+        height: 50%;
+        left: 50%; 
+    }
+
+    .portafolio-trabajo2+p{
+        left: 50%; 
+    }
+
+    /*estilos section-contacto*/
+
+    h6{
+        font-size:45px;   
+    }
+}
