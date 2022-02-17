@@ -276,7 +276,8 @@ h5{
     color: var(--color-titulo);
     font-size: 18px;
     font-weight: 600;
-    padding-top: 1.5rem;
+    padding: 2rem 0;
+    
 }
 
 .portafolio-trabajo2{
@@ -301,7 +302,7 @@ h5{
     color: var(--color-titulo);
     font-size: 18px;
     font-weight: 600;
-    padding-top: 1.5rem;
+    padding: 2rem 0;
     position: relative;
     left: 20%; 
 }
@@ -356,3 +357,4 @@ footer{
     padding-top: 2rem;
     color: var(--color-titulo);
 }
+
